@@ -4,7 +4,9 @@ import { Progress } from "@/components/ui/progress";
 import CustomCursor from './components/CustomCursor';
 import InteractiveBackground from './components/InteractiveBackground';
 import { useState, useEffect } from 'react';
-
+import educar from './assets/Educar.jpg';
+import suraksha from './assets/suraksha.jpg';
+import face_rec from './assets/face_recognition.png';
 function App() {
   const [scrollY, setScrollY] = useState(0);
   const [activeSection, setActiveSection] = useState('hero');
@@ -380,31 +382,25 @@ const projects = [
   {
     title: "EducAR",
     description: "An Augmented Reality based educational app that transforms learning through interactive 3D visualizations.",
-    image: "assets/Educar.jpg",
+    image: educar,
     link: "https://github.com/debasmitaas/EducAR",
     tech: ["Unity", "AR", "Education"]
   },
   {
     title: "Suraksha",
     description: "A women safety app that helps users navigate through the safest areas using AI-powered risk assessment.",
-    image: "assets/suraksha.jpg",
+    image: suraksha,
     link: "https://github.com/suto6/DoubleSlashPro",
     tech: ["React Native", "Maps API", "Safety"]
   },
   {
     title: "Face Recognition Project",
     description: "Advanced face recognition system using OpenCV and deep learning for secure authentication applications.",
-    image: "assets/face_recognition.png",
+    image: face_rec,
     link: "https://github.com/debasmitaas/Face-Recognition-Project",
     tech: ["Python", "OpenCV", "ML"]
   },
-  // {
-  //   title: "Weather Dashboard",
-  //   description: "Real-time weather tracking with interactive visualizations and forecast predictions.",
-  //   image: "https://images.unsplash.com/photo-1592210454359-9043f067919b?auto=format&fit=crop&q=80",
-  //   link: "#",
-  //   tech: ["React", "API", "Weather"]
-  // }
+
 ];
 
 const skillsWithProgress = [
